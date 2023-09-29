@@ -3,9 +3,299 @@
     padding: 0;
 }
 
-header {
+.container{
+    width: 100%;
+    display: table;
+    height: 100%;
+}
+
+@font-face{
+    font-family: Comforta-light;
+    src: url(../fonts/comfortaa-light-webfont.woff2) format('woff2');
+    src: url(../fonts/comfortaa-light-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: Comforta-bold;
+    src: url(../fonts/comfortaa-bold-webfont.woff2) format('woff2');
+    src: url(../fonts/comfortaa-bold-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: Garet;
+    src: url(../fonts/garet-book-webfont.woff2) format('woff2');
+    src: url(../fonts/garet-book-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#header {
     background-color: #000;
     color: #fff;
-    padding: 10px;
+    height: 100%;
+    width: 100%;
+    display: table;
+    vertical-align: middle;
     text-align: center;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+.bombillo {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    background-color: #FDF5DD;  
+    position: absolute;  
+    top: -50px;  
+    left: 50%;  
+    transform: translateX(-50%); 
+    box-shadow: 0 0 20px 10px rgba(255, 255, 200, 0.5);
+  }
+
+#header h1{
+    font-family: Comforta-bold;
+    font-size: 50px;
+    letter-spacing: 8px;
+    padding-top: 2%;
+    padding-bottom: 2.5%;
+}
+
+#header h3, p{
+    font-family: Comforta-bold;
+    font-size: 20px;
+    padding-top: 1%;
+}
+
+#nav{
+    background-color: #000;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    display: table;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 0.3%;
+}
+
+#nav ol{
+    display: flex;
+    justify-content: center;
+}
+
+#nav ol li{
+    list-style: none;
+    padding: 1.5%; 
+}
+
+#nav ol li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Comforta-light;
+    font-size: 20px;
+    padding: 20px 30px 20px 30px;
+}
+
+#nav ol li a:hover{
+    background-color: #fff;
+    color: #000;
+    border-radius: 7px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.active{
+    background-color: #363636;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#body, #body_last{
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 2%;
+}
+
+#body_last{
+    background-color: black;
+    color: #fff;
+}
+
+/* #body_last{
+    background-color: #000;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    display: table;
+    padding-bottom: 2%;
+} */
+
+#body a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bolder;
+}
+
+#body a:hover{
+    color:#707070;
+    font-size: 20px;
+}
+
+#body #quote h2{
+    font-family: Garet;
+    font-size: 28px;
+    padding-left: 9%;
+    padding-right: 9%;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    letter-spacing: 4px;
+}
+
+#body h2{
+    font-family: Garet;
+    font-weight: bolder;
+    font-size: 36px;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    text-align: center;
+    letter-spacing: 7px;
+}
+
+#body_last h2{
+    font-family: Garet;
+    font-weight: bolder;
+    font-size: 36px;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    text-align: center;
+    letter-spacing: 7px;
+}
+
+#body h3{
+    font-family: Garet;
+    font-size: 26px;
+    font-weight: bold;
+    padding-left: 9%;
+    padding-right: 9%;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+#body_last h3{
+    font-family: Garet;
+    font-size: 26px;
+    font-weight: bold;
+    padding-left: 9%;
+    padding-right: 9%;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+#body h4{
+    font-family: Garet;
+    font-size: 16px;
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+#body_last h4{
+    font-family: Garet;
+    font-size: 16px;
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+#body p{
+    font-family: Garet;
+    padding-left: 9%;
+    padding-right: 9%;
+    font-size: 20px;
+    font-weight: 590;
+    padding-bottom: 3%;
+}
+
+#body_last p{
+    font-family: Garet;
+    padding-left: 9%;
+    padding-right: 9%;
+    font-size: 20px;
+    font-weight: 590;
+    padding-bottom: 3%;
+}
+
+
+.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11{
+    display: flex;
+    justify-content: center;
+}
+
+.edison1, .edison2, .faraday, .edison3, .tesla, .westinghouse{
+    width: 400px;
+    height: 450px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.edison4, .edison6{
+    width: 800px;
+    height: 450px;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+.edison7{
+    width: 600px;
+    height: 450px;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+.edison8{
+    width: 650px;
+    height: 450px;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+.edison5{
+    width: 800px;
+    height: 450px;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+#footer{
+    background-color: #000;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    display: table;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-family: Comforta-bold;
+}
+
+#footer p{
+    font-size: 17px;
+    padding-bottom: 1%;
+}
+
+#footer a i{
+    color: white;
+    text-decoration: none;
+}
+
+#footer a i:hover{
+    color: #fff;
+    font-size: 18px;
 }
